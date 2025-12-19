@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuankuDev - Desain Grafis & Video Editing Profesional</title>
+    <meta name="description" content="TuankuDev adalah perusahaan kreatif yang bergerak di bidang desain grafis dan video editing. Kami membantu individu, brand, UMKM, dan kreator digital untuk tampil lebih profesional.">
+    <meta name="keywords" content="desain grafis, video editing, canva, alight motion, capcut, tuankudev, kreatif, profesional, UMKM, digital creator">
+    <meta name="author" content="TuankuDev">
+    <meta property="og:title" content="TuankuDev - Desain Grafis & Video Editing Profesional">
+    <meta property="og:description" content="Perusahaan kreatif yang bergerak di bidang desain grafis dan video editing. Membantu brand dan kreator digital tampil lebih profesional.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/assets/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1F2937',
+                        'accent': '#3B82F6',
+                        'dark': '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+<script src="./assets/js/sc.js"></script>
+</head>
+<body class="scroll-smooth">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="./assets/assets/logomb.svg" alt="TuankuDev Logo" class="h-10 w-auto logo-desktop logo-hover">
+                    <img src="./assets/assets/logomb.svg" alt="TuankuDev Logo" class="h-10 w-auto logo-mobile">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-accent transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-accent transition-colors">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-accent transition-colors">Portfolio</a>
+                    <a href="#about" class="text-gray-700 hover:text-accent transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-accent transition-colors">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-accent transition-colors">Home</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-accent transition-colors">Services</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-accent transition-colors">Portfolio</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-accent transition-colors">About</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-accent transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="flex items-center mb-6">
+                        <img src="./assets/assets/thumbnail.svg" alt="TuankuDev Logo" class="h-16 w-auto mr-4">
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-bold text-primary mb-6">
+                        Desain & Video <span class="gradient-text">Profesional</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        TuankuDev membantu individu, brand, UMKM, dan kreator digital untuk tampil lebih profesional lewat konten visual yang rapi, relevan, dan mengikuti tren.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="hero-gradient text-white px-8 py-4 rounded-lg font-semibold hover-lift text-center">
+                            Hubungi Kami
+                        </a>
+                        <a href="#portfolio" class="border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent hover:text-white transition-all text-center">
+                            Lihat Portfolio
+                        </a>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <img src="./assets/assets/decs.svg" alt="Desain grafis dan video editing profesional" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-primary mb-4">Layanan Kami</h2>
+                <p class="text-xl text-gray-600">Solusi kreatif untuk kebutuhan visual digital Anda</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="hover-lift bg-white border border-gray-200 rounded-xl p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Desain Canva</h3>
+                    <p class="text-gray-600 mb-6">
+                        Desain grafis profesional menggunakan Canva untuk social media, branding, dan materi promosi yang clean dan fungsional.
+                    </p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>✓ Social Media Graphics</li>
+                        <li>✓ Brand Identity</li>
+                        <li>✓ Marketing Materials</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="hover-lift bg-white border border-gray-200 rounded-xl p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Video Editing</h3>
+                    <p class="text-gray-600 mb-6">
+                        Video editing kreatif menggunakan Alight Motion dan CapCut untuk konten video yang engaging dan profesional.
+                    </p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>✓ Social Media Videos</li>
+                        <li>✓ Promotional Content</li>
+                        <li>✓ Motion Graphics</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="hover-lift bg-white border border-gray-200 rounded-xl p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Creative Content</h3>
+                    <p class="text-gray-600 mb-6">
+                        Pembuatan konten kreatif yang mengikuti tren digital dan disesuaikan dengan kebutuhan brand Anda.
+                    </p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>✓ Trend-based Content</li>
+                        <li>✓ Brand Strategy</li>
+                        <li>✓ Creative Campaigns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <img src="./assets/assets/ppdesn12.svg" alt="Tim TuankuDev" class="rounded-lg shadow-xl">
+                </div>
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-primary mb-6">Tentang TuankuDev</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        TuankuDev adalah perusahaan kreatif yang bergerak di bidang desain grafis dan video editing. Kami membantu individu, brand, UMKM, dan kreator digital untuk tampil lebih profesional lewat konten visual yang rapi, relevan, dan mengikuti tren.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Visi Kami</h3>
+                    <p class="text-gray-600 mb-6">
+                        Menjadi perusahaan kreatif yang adaptif, relevan, dan dipercaya dalam bidang desain grafis dan video editing di era digital.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Misi Kami</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Menyediakan layanan desain berbasis Canva yang clean dan fungsional
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Menghasilkan video editing kreatif menggunakan Alight Motion dan CapCut
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Membantu klien membangun identitas visual yang kuat dan profesional
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Mengutamakan kualitas, kecepatan, dan komunikasi yang jelas
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Terus mengikuti tren desain dan konten digital
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-primary mb-4">Portfolio Kami</h2>
+                <p class="text-xl text-gray-600">Hasil karya terbaik untuk klien-klien kami</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/cacs13.svg" alt="Desain Social Media" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">UI/Visual Design</h3>
+                    <p class="text-gray-600">Presentation Design – Company Profile</p>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/vdb.svg" alt="Video Editing" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Promotional Video</h3>
+                    <p class="text-gray-600">Video promosi produk makanan dengan motion graphics</p>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/cacs12.svg" alt="Branding" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Brand Identity</h3>
+                    <p class="text-gray-600">Pembuatan identitas visual untuk startup teknologi</p>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/DSV2.svg" alt="Content Creation" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Content Package</h3>
+                    <p class="text-gray-600">Paket konten lengkap untuk UMKM kuliner</p>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/motion_graphics_img_01.webp" alt="Motion Graphics" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Motion Graphics</h3>
+                    <p class="text-gray-600">Animasi logo untuk perusahaan startup</p>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="hover-lift fade-in">
+                    <img src="./assets/assets/gif.gif" alt="Marketing Materials" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Marketing Kit</h3>
+                    <p class="text-gray-600">Material marketing untuk campaign product launch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gradient-to-br from-accent to-purple-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4">Mengapa Memilih TuankuDev?</h2>
+                <p class="text-xl">Kami memberikan nilai lebih untuk setiap proyek</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Kreatif</h3>
+                    <p class="text-white text-opacity-90">
+                        Ide-ide segar dan inovatif yang mengikuti tren terkini untuk membuat brand Anda menonjol.
+                    </p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Cepat</h3>
+                    <p class="text-white text-opacity-90">
+                        Proses pengerjaan yang efisien dengan turnaround time yang cepat tanpa mengorbankan kualitas.
+                    </p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Profesional</h3>
+                    <p class="text-white text-opacity-90">
+                        Standar kerja profesional dengan komunikasi yang jelas dan hasil yang memenuhi ekspektasi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-primary mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-600">Mari diskusikan proyek kreatif Anda bersama kami</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <form id="contact-form" class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2" for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent" placeholder="John Doe">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2" for="service">Layanan yang Dibutuhkan</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                                <option value="">Pilih Layanan</option>
+                                <option value="desain">Desain Canva</option>
+                                <option value="video">Video Editing</option>
+                                <option value="content">Creative Content</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2" for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent" placeholder="Ceritakan tentang proyek Anda..."></textarea>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <button type="button" id="whatsapp-btn" class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold hover-lift transition-all flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                <span>🚀 Kirim via WhatsApp (Fast Response)</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-primary mb-6">Informasi Kontak</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-1">Email</h4>
+                                    <p class="text-gray-600">info@tuankudev.com</p>
+                                    <p class="text-gray-600">hello@tuankudev.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-1">WhatsApp (Fast Response)</h4>
+                                    <p class="text-gray-600 mb-2">📱 +62 895-8031-66060</p>
+                                    <p class="text-gray-600">📱 +62 857-7127-2179</p>
+                                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mt-2">
+                                        ✅ Available 24/7
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-1">Jam Operasional</h4>
+                                    <p class="text-gray-600">Senin - Jumat: 09:00 - 18:00</p>
+                                    <p class="text-gray-600">Sabtu: Tutup</p>
+                                    <p class="text-gray-600">Minggu: Tutup</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-primary mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/comebuz/" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@terpocast" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/bedehub" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <img src="./assets/assets/logomb.svg" alt="TuankuDev Logo" class="h-12 w-auto">
+                </div>
+                <h3 class="text-2xl font-bold mb-2">TUANKUDEV</h3>
+                <p class="text-gray-400 mb-6">TuankuDev adalah perusahaan kreatif yang bergerak di bidang desain grafis dan video editing. Kami membantu individu, brand, UMKM, dan kreator digital untuk tampil lebih profesional lewat konten visual yang rapi, relevan, dan mengikuti tren.</p>
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-400">© 2024 TuankuDev. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6285771272179?text=Halo%20TuankuDev!%20Saya%20tertarik%20dengan%20layanan%20Anda." 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Hubungi kami via WhatsApp">
+        <svg width="60" height="30" viewBox="0 0 24 24" fill="currentColor" style="margin-top: 15px; text-align: center;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
